@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-17T18:00:57 IST" name="Default suite" finished-at="2023-08-17T18:01:15 IST" duration-ms="18981">
+    <groups>
+    </groups>
+    <test started-at="2023-08-17T18:00:57 IST" name="Default test" finished-at="2023-08-17T18:01:15 IST" duration-ms="18981">
+      <class name="Scripts.Testcase1">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Scripts.Testcase1@54e1c68b]" started-at="2023-08-17T18:00:58 IST" name="openApp" finished-at="2023-08-17T18:01:15 IST" duration-ms="17548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc1()[pri:0, instance:Scripts.Testcase1@54e1c68b]" started-at="2023-08-17T18:01:15 IST" name="tc1" finished-at="2023-08-17T18:01:15 IST" duration-ms="13" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+The method mousehover(WebElement, WebDriver) in the type WebDriverUtilities is not applicable for the arguments (WebDriver, WebElement)
+The method doubleclick(WebElement, WebDriver) in the type WebDriverUtilities is not applicable for the arguments (WebDriver, WebElement)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The method mousehover(WebElement, WebDriver) in the type WebDriverUtilities is not applicable for the arguments (WebDriver, WebElement)
+The method doubleclick(WebElement, WebDriver) in the type WebDriverUtilities is not applicable for the arguments (WebDriver, WebElement)
+
+at Scripts.Testcase1.tc1(Testcase1.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Scripts.Testcase1@54e1c68b]" started-at="2023-08-17T18:01:15 IST" name="closeApp" finished-at="2023-08-17T18:01:15 IST" duration-ms="335" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc1 status=FAILURE method=Testcase1.tc1()[pri:0, instance:Scripts.Testcase1@54e1c68b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:462)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at GenericLibraries.Photo.getphoto(Photo.java:22)
+at GenericLibraries.BaseClass.closeApp(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Scripts.Testcase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
